@@ -18,29 +18,29 @@ Diferente de uma página estática simples, esta aplicação utiliza Django para
 
 ## 🛠️ Tecnologias e Ferramentas
 
-* Backend: [Python 3](https://www.python.org/about/) & [Django](https://www.djangoproject.com/) (MVT Architecture).
+* **Backend**: <a href="https://www.python.org/about/" target="_blank">Python 3</a> & <a href="https://www.djangoproject.com/" target="_blank">Django</a> (MVT Architecture).
 
-* Frontend: [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) & [Tailwind CSS](https://tailwindcss.com/) (Design Responsivo e Moderno).
+* **Frontend**: <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a> & <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> (Design Responsivo e Moderno).
 
-* Comunicação: Utilização da biblioteca [django.core.mail](https://docs.djangoproject.com/en/6.0/topics/email/#:~:text=django.core.mail%20module.) com EmailMultiAlternatives.
+* **Comunicação**: Utilização da biblioteca <a href="https://docs.djangoproject.com/en/6.0/topics/email/" target="_blank">django.core.mail</a> com EmailMultiAlternatives.
 
 * Estilização: Mobile-first approach para total compatibilidade com smartphones.
 
 ## 💻 Funcionalidades Principais
 
-* Single Page Experience (Home): Seção "Sobre" integrada à vitrine de serviços para uma navegação fluida.
+* **Single Page Experience (Home)**: Seção "Sobre" integrada à vitrine de serviços para uma navegação fluida.
 
-* Fluxo de Contato Automatizado:
+* **Fluxo de Contato Automatizado**:
 
-    Formulário com validação de dados.
+ * Formulário com validação de dados.
 
-    Disparo automático de e-mail formatado em HTML para o administrador.
+ * Disparo automático de e-mail formatado em HTML para o administrador.
 
-    Redirecionamento inteligente para página de agradecimento (Success Page).
+ * Redirecionamento inteligente para página de agradecimento (Success Page).
 
-* Componentização: Header e Footer consistentes em todas as rotas da aplicação.
+* **Componentização**: Header e Footer consistentes em todas as rotas da aplicação.
 
-* UI/UX: Interface limpa e otimizada construída com Tailwind CSS.
+* **UI/UX**: Interface limpa e otimizada construída com Tailwind CSS.
 
 ## 🏠 Arquitetura de Templates e Organização
 
