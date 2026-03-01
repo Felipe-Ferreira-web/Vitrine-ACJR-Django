@@ -61,6 +61,5 @@ SITE DE CONTATO/
 │   └── views.py            # Orquestração: Renderização, tratamento de erros e e-mails
 ├── project/                # Configurações de ambiente do Django
 ├── utils/                  # Recursos auxiliares (requirements.txt, tailwind.config.js)
-├── .env                    # Variáveis de ambiente sensíveis (segurança)
 └── manage.py               # Utilitário de linha de comando do Django
 ```
