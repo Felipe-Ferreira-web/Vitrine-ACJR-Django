@@ -7,9 +7,11 @@ flowchart TD
     A[Home / Sobre] --> B(Página de Contato)
     B -- Envio de dados--> C{Validação Django}
     C -- Inválido --> B
-    C -- Válido --> D[Envio de E-mail HTML]
-    D --> E[Página de Agradecimento]
+    C -- Válido --> D{Envio de E-mail HTML}
+    D --Sucesso --> E[Página de Agradecimento]
+    D -- Erro --> F[Página de Erro]
     E --> A
+    F --> A
 ```
 
 ## 📋 Sobre o Projeto
@@ -48,6 +50,7 @@ SITE DE CONTATO/
 ├── contact_site/           # Aplicação principal (Lógica e Core)
 │   ├── templates/          # Gestão modular de visualização
 │   │   ├── emails/         # Templates para notificações SMTP (email.html)
+│   │   ├── errors/         # Feedback visual para exceções e falhas (error.html)
 │   │   ├── global/         # Template mestre (base.html)
 │   │   ├── partials/       # Componentes reutilizáveis (header.html, footer.html)
 │   │   ├── Home.html       # Página institucional e vitrine
@@ -55,7 +58,7 @@ SITE DE CONTATO/
 │   │   └── obrigado.html   # Feedback de sucesso pós-envio
 │   ├── form.py             # Definição e validação do ContactForm
 │   ├── urls.py             # Mapeamento de rotas da aplicação
-│   └── views.py            # Orquestração: Renderização e envio de e-mails
+│   └── views.py            # Orquestração: Renderização, tratamento de erros e e-mails
 ├── project/                # Configurações de ambiente do Django
 ├── utils/                  # Recursos auxiliares (requirements.txt, tailwind.config.js)
 ├── .env                    # Variáveis de ambiente sensíveis (segurança)
