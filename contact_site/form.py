@@ -7,7 +7,7 @@ class ContactForm(forms.Form):
     email = forms.EmailField( 
         error_messages={'required': 'O E-mail é obrigatório.', 'invalid': 'Formato de E-mail inválido.'}, label="E-mail"
     )
-    object = forms.CharField(
+    subject = forms.CharField(
  
         error_messages={'required': 'Coloque um assunto.'},label="Assunto"
     )
